@@ -22,6 +22,10 @@ namespace Entitystudent.Controllers
 
         public async Task<IActionResult> Addstudent(Student s)
         {
+            if (s.section == "")
+            {
+                s.section="NA";
+            }
             await _context.AddAsync(s);
             await _context.SaveChangesAsync();
 

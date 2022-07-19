@@ -8,5 +8,7 @@ namespace Entitystudent.Model
 
         [Key]
         public int rollnumber { get; set; } 
+
+        public string section { get; set; } 
     }
 }
